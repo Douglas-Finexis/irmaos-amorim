@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+/* ---------------Cabeçalho---------------*/
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #cb1e1e;
+    z-index: 1000;
+}
+
+.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 40px;
+}
+
+li a {
+    padding: 8px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+    color: black;
+    background-color: #efc71b;
+}
+
+img {
+    margin-right: 50px;
+    width: 100px;
+    height: 50px;
+    display: block;
+}
+/* ---------------Cabeçalho---------------*/
+
+main {
+    margin-top: 100px;
+}
+
+/* ---------------Banner---------------*/
+.banner-carrossel {
+    margin: 0 auto;
+    width: 40%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagens-carrossel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imagens-carrossel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    z-index: 0;
+}
+
+.imagens-carrossel img.ativo {
+    opacity: 1;
+    z-index: 1;
+}
+
+.btn-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prox {
+    right: 10px;
+}
+
+.volt {
+    left: 10px;
+}
+
+/* ---------------Banner---------------*/
+
+/* ---------------Quem Somos---------------*/
+#quem-somos {
+    scroll-margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 180px;
+    text-align: center;
+    line-height: 1.6;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quem-somos h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.quem-somos p {
+    flex-wrap: nowrap;
+    font-size: 18px;
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.imgn-frente {
+    position: relative;
+}
+
+.quem-somos img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px outset rgba(32, 29, 29, 0.363);
+    box-shadow: 0 4px 12px black;
+}
+/* ---------------Quem Somos---------------*/
+
+/* ---------------Promoções---------------*/
+.ofertas-semanais {
+    margin-top: 100px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-ofertas {
+    display: block;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #cb1e1e;
+}
+
+.titulo-ofertas h1 {
+    margin-bottom: 10px;
+    font-size: 45px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-ofertas p {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dias-promo {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #efc71b;
+    margin: 30px 50px 20px 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px 5px 20px 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dias-promo img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px outset rgba(32, 29, 29, 0.363);
+    box-shadow: 0 4px 12px black;
+}
+/* ---------------Promoções---------------*/
+
+/* ---------------Assadão---------------*/
+.assadao-amorim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .banner-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .banner-container .btn-reserva {
+    position: absolute;
+    top: 52%;     
+    left: 80%;    
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 30px 60px;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn-reserva:hover {
+    color: #cb1e1e
+  }
+/* ---------------Assadão---------------*/
+
+/* ---------------Rodapé---------------*/
+footer {
+    display: block;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #efc71b;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 40px 40px 2px 2px;
+}
+
+#contato-redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contato-redes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 4px;
+}
+
+#contato-redes a:hover {
+    color: #cb1e1e;
+}
+
+#contato-redes img {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+}
+/* ---------------Rodapé---------------*/
+
+/* ---------------Telas até 1644px---------------*/
+@media (max-width: 1644px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu-list li a {
+    font-size: 22px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .banner-carrossel {
+    width: 100%;
+    height: 350px;
+  }
+
+  .imagens-carrossel img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .prox {
+    right: 25%;
+}
+
+.volt {
+    left: 25%;
+}
+
+  #quem-somos {
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  #quem-somos img {
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+  }
+
+  .quem-somos h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .quem-somos p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #ofertas-semanais {
+    margin-top: 15%;
+  }
+
+  .dias-promo {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+  }
+
+  .dias-promo img {
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    width: 50%;
+  }
+
+  .banner-container .btn-reserva {
+    font-size: 40px;
+    padding: 20px 30px;
+    top: 52%;
+    left: 80%;
+  }
+
+  #contato-redes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* ---------------Telas até 1644px---------------*/
+
+/* ---------------Telas até 1024px---------------*/
+@media (max-width: 1024px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  header img {
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu-list li a {
+    color: #333;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .banner-carrossel {
+    width: 100%;
+    height: 250px;
+  }
+
+  .imagens-carrossel img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .prox {
+    right: 20%;
+}
+
+.volt {
+    left: 20%;
+}
+
+  #quem-somos {
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  #quem-somos img {
+    margin-top: 30px;
+  }
+
+  .quem-somos h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .quem-somos p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #ofertas-semanais {
+    margin-top: 15%;
+  }
+
+  .dias-promo {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+  }
+
+  .dias-promo img {
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    width: 50%;
+  }
+
+  .banner-container .btn-reserva {
+    font-size: 25px;
+    padding: 20px 30px;
+    top: 52%;
+    left: 80%;
+  }
+
+  #contato-redes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contato-redes a {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+/* ---------------Telas até 1024px---------------*/
+
+/* ---------------Telas até 480px---------------*/
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  header img {
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu-list li a {
+    color: #333;
+    font-size: 22px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .banner-carrossel {
+    width: 100%;
+    height: 150px;
+  }
+
+  .imagens-carrossel img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .prox {
+      right: 25px;
+  }
+
+  .volt {
+      left: 25px;
+  }
+
+
+  #quem-somos {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  #quem-somos h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #quem-somos p {
+    font-size: 16px;
+    text-align: center;
+  }  
+
+  .imgn-frente img {
+    height: 180px;
+  }
+
+  .dias-promo {
+    flex-direction: column;
+    margin: 20px;
+    gap: 15px;
+  }
+
+  .dias-promo img {
+    width: 90%;
+  }
+
+  #assadao-amorim {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .banner-container .btn-reserva {
+    font-size: 11px;
+    padding: 30px 60px;
+    left: 80%;
+    top: 51%;
+    text-align: center;
+    text-shadow: #000000 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  #contato-redes {
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;;
+  }
+
+  #contato-redes a {
+    font-size: 18px;
+  }
+}
+/* ---------------Telas até 480px---------------*/
+
+/* ---------------Menu Toggle---------------*/
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 1100;
+  }
+
+  @media (max-width: 1024px) {
+    nav ul.menu-list {
+      display: none;
+      flex-direction: column;
+      background-color: #efc71b;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      padding: 10px;
+      gap: 10px;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+    }
+  
+    nav ul.menu-list.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+/* ---------------Menu Toggle---------------*/

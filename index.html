@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mercado Irmãos Amorim</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="img/Irmãos Amorim.png" alt="logotipo-mercado"></a>
+        <nav class="menu-topo">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="menu-list">
+                <li><a href="#banner-carrossel">Início</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#ofertas-semanais">Nossas Ofertas</a></li>
+                <li><a href="#assadao-amorim">Carne Assada</a></li>
+                <li><a href="#contato-redes">Entre em Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner-carrossel" class="banner-carrossel">
+            <div class="imagens-carrossel">
+                <img src="img/Oferta 1.png" alt="oferta 1" class="slide ativo">
+                <img src="img/Oferta 2.png" alt="oferta 2" class="slide">
+                <img src="img/Oferta 3.png" alt="oferta 3" class="slide">
+                <img src="img/Oferta 4.png" alt="oferta 4" class="slide">
+            </div>
+            <button class="btn-carrossel prox">&#10095</button>
+            <button class="btn-carrossel volt">&#10094</button>
+        </section>
+
+        <section id="quem-somos" class="quem-somos">
+            <div class="apresentacao">
+                <h1>Quem Somos</h1>
+                <p>
+                    O Mercado Irmãos Amorim foi fundado em 21 de fevereiro de 2021, a partir do sonho de dois irmãos<br>
+                    determinados a oferecer algo diferente para a comunidade.<br>
+                    Desde então, o mercado cresceu e se tornou referência na região,<br>
+                    com uma grande variedade de produtos e um compromisso firme com qualidade e honestidade.<br>
+                    Nosso maior orgulho é o atendimento humanizado, sempre feito com carinho, respeito e atenção.<br>
+                    Mais do que vender, queremos criar laços com nossos clientes<br>
+                    e ser aquela escolha de confiança no dia a dia. Aqui, você encontra tudo o que precisa
+                </p>
+            </div>
+            <div class="imgn-frente">
+                <img src="img/frente-mercado.png" alt="frente mercado">
+            </div>
+        </section>
+
+        <section id="ofertas-semanais" class="ofertas-semanais">
+            <div class="titulo-ofertas">
+                <h1>Ofertas Semanais</h1>
+                <p>
+                    Nossas promoções são semanais e separadas por dia<br>
+                    para que você cliente possa se organizar nas suas compras.
+                 </p>
+                 <div class="dias-promo">
+                     <img src="img/promo-segunda.png" alt="promo-segunda">
+                     <img src="img/promo-terca.png" alt="promo-terca">
+                     <img src="img/promo-quarta-quinta.png" alt="promo-quarta-quinta">
+                     <img src="img/promo-sexta.png" alt="promo-sexta">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="assadao-amorim" class="assadao-amorim">
+            <div class="banner-container">
+                <img src="img/banner-assados.png" alt="assadao">
+                <a href="https://wa.me/5547997936497" class="btn-reserva">Faça a sua<br>RESERVA!</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="contato-redes">
+            <a href="https://wa.me/5547997936497?text=Olá%2C%20gostaria%20de%20fazer%20uma%20reserva!" target="_blank""><img src="img/whatsapp.png" alt="whatsapp">Whatsapp</a>
+            <a href="https://www.instagram.com/mercadoirmaosamorimm?igsh=ZjBtZndzajhuOGF4"><img src="img/instagram.png" alt="whatsapp">Instagram</a>
+            <a href="mailto:mercadoirmaosamorim@gmail.com"><img src="img/email.png" alt="email">mercadoirmaosamorim@gmail.com</a>
+            <a href="https://maps.app.goo.gl/9Bgt3P51JqH3TrRd9"><img src="img/endereco.png" alt="endereco">Victor Konder, Walter Schmitz, 75 </a>
+        </div>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
